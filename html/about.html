@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="http://github.com/michalsnik/aos">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <title>ABOUT US</title>
+</head>
+
+<body onscroll="navScrolled()" >
+
+
+
+    <!-- javascript animating the text -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
+    </script>
+    <script>
+        hljs.initHighlightingOnLoad();
+
+        $('.hero__scroll').on('click', function (e) {
+            $('html, body').animate({
+                scrollTop: $(window).height()
+            }, 1200);
+        });
+    </script>
+    <!-- animating the text ends -->
+    <script>
+        var TxtType = function (el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
+
+        TxtType.prototype.tick = function () {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+
+            if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+
+            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+            var that = this;
+            var delta = 200 - Math.random() * 100;
+
+            if (this.isDeleting) {
+                delta /= 2;
+            }
+
+            if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+            }
+
+            setTimeout(function () {
+                that.tick();
+            }, delta);
+        };
+        // Executing the script 
+
+        window.onload = function () {
+            var elements = document.getElementsByClassName('typewrite');
+            for (var i = 0; i < elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-type');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtType(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+
+        };
+    </script>
+
+
+    <header id="top">
+        <nav class="cardd profileNav " id="navv">
+            <div id="logoSection">
+                <div id="profilePic"></div>
+                <p>Weber</p>
+            </div>
+            <ul class="profileNavbar ">
+                <li><a tabindex="1" class="PnavLink " href="index.html">Home</a></li>
+                <li><a tabindex="2" class="PnavLink" href="services.html">Services</a></li>
+                <li><a tabindex="3" class="PnavLink" href="register.html">Register</a></li>
+                <li><a tabindex="3" class="PnavLink" href="table.html">Time Table</a></li>
+                <li><a tabindex="4" class="PnavLink " href="about.html">About</a></li>
+                <li><a tabindex="5" class="PnavLink" href="contact.html">Contact Us</a></li>
+                <li><a tabindex="5" class="PnavLink" href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+
+
+        <div id="mainHeader">
+            <div id="head1"></div>
+        </div>
+    </header>
+
+    <section class="crsel">
+        <div class="carousel">
+
+            <button class="carousel_button carousel_button--left">
+                <img src="../asset/images/left.svg" alt="">
+            </button>
+
+            <div class="carousel_track-container">
+                <ul class="carousel_track">
+                    <li class="carousel_slide current-slide">
+                        <img class="carousel_image " src="../asset/images/chair-chat-conversation-711009.jpg" alt="">
+                    </li>
+                    <li class="carousel_slide">
+                        <img class="carousel_image" src="../asset/images/accessories-adult-age-731506.jpg" alt="">
+                    </li>
+                    <li class="carousel_slide">
+                        <img class="carousel_image"
+                            src="../asset/images/businessman-chairs-facial-expression-716411.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+
+            <button class="carousel_button carousel_button--right">
+                <img src="../asset/images/right.svg" alt="">
+            </button>
+
+            <div class="carousel_nav">
+                <button class="carousel_indicator current-slide"></button>
+                <button class="carousel_indicator"></button>
+                <button class="carousel_indicator"></button>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="mainheadonit">
+
+        <div class="firsthead" id="text">
+            <span class="pgsubtitle">About MaRS</span>
+            <h2>
+                <a class="typewrite" data-period="2000"
+                    data-type='[ "MaRS is a launchpad for startups, a platform for researchers and a home to innovators." ]'>
+                </a>
+            </h2>
+        </div>
+
+
+
+        <div class="saleWrapper">
+
+            <div class="sale">
+
+            </div>
+
+            <div class="sale">
+                <div class="getsetalign" data-aos="zoom-in">
+                    <p>
+                        We support over 1,200 Canadian science and tech companies dat are tackling some of society’s
+                        greatest challenges, providing them with tailored resources at every stage of their growth, from
+                        startup to scale-up. We focus on the four sectors — cleantech,
+                        health, fintech and enterprise software — where the potential is greatest to build high-impact
+                        companies dat strengthen the economy.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <main class="fashion-shop">
+        <div class="collectfashion">
+            <div class="fashion-row">
+
+                <div class="colfashion">
+                    <div class="shop-fashion">
+                        <span class="tellme"><i class="fas fa-user fa-6x" style="margin: 0 20px 0 0; "
+                                data-aos="fade-right"></i> who we are </span><br><br><br><br><br>
+                        <h1 style="font-size: 40px" data-aos="fade-up">MaRS is North America’s largest urban innovation
+                            hub
+                        </h1>
+                        <div class="quality" data-aos="fade-up">
+                            <p>Occupying 1.5 million square feet in downtown Toronto, MaRS is a diverse community of
+                                more than 120 tenants, including research labs and global tech companies, each selected
+                                to create a community dat is collaborating on real
+                                solutions to important problems.</p>
+                            <p>
+                                The work carried out by the innovators in our community is making innovation mean
+                                something again. For example, it helps streamline our healthcare system, reduce the
+                                effects of climate change, unlock new cures for disease, envision the jobs of the
+                                future,
+                                improve mobility in crowded cities, and provide food and clean water for a growing
+                                population.
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="colfashionimgcontent" data-aos="zoom-in-right"></div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <section class="gettoknow">
+        <div class="getrow">
+            <div class="servcontainer2">
+                <div class="srow ">
+
+                    <h2 class="sup">want to learn about our space </h2>
+                    <h2 class="sbig">Our Space</h2>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="fashion-shop2">
+        <div class="collectfashion2">
+            <div class="fashion-row2">
+
+                <div class="colfashion2">
+                    <div class="shop-fashion2" data-aos="fade-up">
+                        <span class="tellme2"><i class="fas fa-award fa-7x" style="margin: 0 20px 0 0; "></i> our story
+                        </span><br><br><br><br><br>
+                        <h1 style="font-size: 40px">Reinventing the future</h1>
+                        <div class="quality2">
+                            <p>Built on teh site where insulin was discovered, MaRS was founded in 2000 by a group of 14
+                                civic leaders driven by a passion for teh possible. They donated $14 million and rallied
+                                further support from government, corporations
+                                and teh University of Toronto to create MaRS.
+
+                            </p>
+                            <p>
+                                Our building opened in 2005 and is now home to a curated mix of startups, global
+                                corporates and leading research labs. To meet demand from Toronto’s burgeoning tech
+                                ecosystem, MaRS opened its West Tower expansion in 2016, doubling the building’s size.
+                                And we has plans to grow again, with a new space for scaling startups on the city’s
+                                waterfront set to launch in 2021.
+                            </p><br>
+                            <p id="gobtn"><a href="#" class="button">Learn more in our report: Place Matters</a></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="colfashionimgcontent2" data-aos="zoom-in-right"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="fashion-shop3">
+        <div class="collectfashion3">
+            <div class="fashion-row3">
+                <div class="colfashionimgcontent3" data-aos="zoom-in-right"></div>
+
+                <div class="colfashion3">
+                    <div class="shop-fashion3" data-aos="fade-up">
+                        <i class="fab fa-bitcoin fa-7x" style="margin: 0 20px 0 0; "></i>
+                        <h1 style="font-size: 40px">Driving the new economy</h1>
+                        <div class="quality3">
+                            <p>At MaRS, we believe innovation should be more than just a word dat’s thrown around. Our
+                                mission is to make it mean something again — through work dat is purposeful, necessary
+                                and done to make teh world a better place.
+
+                            </p>
+                            <p>
+                                Teh companies we support build new technologies not only to create jobs and economic
+                                prosperity, but to tackle big problems and improve people’s lives.
+                            </p>
+                            <p>
+                                These companies are creating well-paying jobs in communities across Canada. Since 2008,
+                                MaRS-supported companies has contributed $11.6B to Canadian GDP.
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="accor">
+        <h2 id="accorhead">Our subsidaries</h2>
+        <button class="accordion" type="button">MaRs ORBITRARY</button>
+        <div class="panel">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta rem, nihil ipsum labore ex architecto
+                tempore harum mollitia. Harum error ratione adipisci ducimus eligendi, quae nobis ipsum necessitatibus
+                praesentium eos!
+            </p>
+        </div>
+        <button class="accordion" type="button">MaRs Pvt Ltd</button>
+        <div class="panel">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta rem, nihil ipsum labore ex architecto
+                tempore harum mollitia. Harum error ratione adipisci ducimus eligendi, quae nobis ipsum necessitatibus
+                praesentium eos!
+            </p>
+        </div>
+        <button class="accordion" type="button">MaNaSa Space Shuttle</button>
+        <div class="panel">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta rem, nihil ipsum labore ex architecto
+                tempore harum mollitia. Harum error ratione adipisci ducimus eligendi, quae nobis ipsum necessitatibus
+                praesentium eos!
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+    <section>
+        <div class="colfashion3">
+            <div class="shop-fashion3" data-aos="fade-up">
+                <span class="tellmeX">WHO'S INVOLVED
+                </span><br><br>
+                <h1 style="font-size: 40px">The MaRs Leadership Team:</h1>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="photos">
+        <div class="rowarrivals">
+            <!-- data-aos-easing="ease-in-sine" -->
+            <div class="coloumnarrivals" data-aos="zoom-in-right">
+
+                <div class="product-img">
+                    <img src="../asset/images/accessories-adult-age-731506.jpg" alt="shoes">
+                    <div class="product-quicview">
+                        <a href="#" data-toggle="modal" data-target="#quickview"><i class="fas fa-plus"></i></a>
+                    </div>
+                </div>
+
+                <div class="product-description">
+                    <h4 class="product-price">Kirandeep Kaur</h4>
+                    <p>c0</p>
+
+                </div>
+            </div>
+
+
+            <div class="coloumnarrivals" data-aos="zoom-in-right">
+
+                <div class="product-img">
+                    <img src="../asset/images/adult-black-and-white-dark-412840.jpg" alt="shoes">
+                    <div class="product-quicview">
+                        <a href="#" data-toggle="modal" data-target="#quickview"><i class="fas fa-plus"></i></a>
+                    </div>
+                </div>
+
+                <div class="product-description">
+                    <h4 class="product-price">jashanpreet singh</h4>
+                    <p>C0752052</p>
+
+
+                </div>
+            </div>
+
+            <div class="coloumnarrivals" data-aos="zoom-in-right">
+
+                <div class="product-img">
+                    <img src="../asset/images/ball-basketball-basketball-court-2085739.jpg" alt="shoes">
+                    <div class="product-quicview">
+                        <a href="#" data-toggle="modal" data-target="#quickview"><i class="fas fa-plus"></i></a>
+                    </div>
+                </div>
+
+                <div class="product-description">
+                    <h4 class="product-price">navjot singh</h4>
+                    <p>C0752561</p>
+
+
+                </div>
+            </div>
+
+            <div class="coloumnarrivals" data-aos="zoom-in-right">
+
+                <div class="product-img">
+                    <img src="../asset/images/businessman-chairs-facial-expression-716411.jpg" alt="shoes">
+                    <div class="product-quicview">
+                        <a href="#" data-toggle="modal" data-target="#quickview"><i class="fas fa-plus"></i></a>
+                    </div>
+                </div>
+
+                <div class="product-description">
+                    <h4 class="product-price">gurjot singh</h4>
+                    <p>C0</p>
+
+
+                </div>
+            </div>
+
+            <div class="coloumnarrivals" data-aos="zoom-in-right">
+
+                <div class="product-img">
+                    <img src="../asset/images/bookshelves-chair-desk-1546912.jpg" alt="shoes">
+                    <div class="product-quicview">
+                        <a href="#" data-toggle="modal" data-target="#quickview"><i class="fas fa-plus"></i></a>
+                    </div>
+                </div>
+
+                <div class="product-description">
+                    <h4 class="product-price">nitin kumar</h4>
+                    <p>C0</p>
+                </div>
+            </div>
+
+    </section>
+
+
+
+
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion ");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function () {
+                this.classList.toggle("active")
+
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px ";
+                }
+            }
+        }
+    </script>
+
+
+    <script src="../js/carousel.js "></script>
+    <script src="../js/index.js" ></script>
+
+</body>
+
+</html>

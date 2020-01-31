@@ -1,0 +1,482 @@
+.saleWrapper {
+    display: -ms-grid;
+    display: grid;
+    padding: 100px 0px;
+    -ms-grid-columns: repeat( 2, 1fr);
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    color: white;
+}
+
+.sale {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.saleWrapper>.sale:nth-child(1) {
+    background-image: url(../media/About-MaRS-Header-896x1120.jpg);
+    background-repeat: no-repeat;
+    background-color: whitesmoke;
+    background-position: center;
+    background-size: cover;
+    width: 80%;
+}
+
+.firsthead {
+    position: absolute;
+    top: 140px;
+    color: black;
+    text-align: left;
+    margin: 0 0 0 300px;
+}
+
+.pgsubtitle {
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: 0px;
+}
+
+.firsthead h2 {
+    font-size: 60px;
+    color: black;
+    text-shadow: 3px 3px whitesmoke;
+}
+
+.getsetalign {
+    bottom: 10px;
+    color: black;
+    font-size: 18px;
+    margin: 0px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.getsetalign>p {
+    position: relative;
+    top: 75%;
+    font-weight: 470;
+    line-height: 32px;
+}
+
+.counter {
+    font-size: 66px;
+    color: #555;
+    margin-bottom: 350px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+}
+
+#currency {
+    font-size: 66px;
+}
+
+
+/* smaky */
+
+.fashion-shop {
+    width: 100%;
+    height: auto;
+    margin: 0 0 100px 0;
+    padding: 0;
+}
+
+.collectfashion {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.fashion-row {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    background-color: white;
+    height: 100vh;
+    -ms-grid-columns: 2fr 1fr;
+    grid-template-columns: 55% 45%;
+}
+
+.colfashionimgcontent {
+    background-color: whitesmoke;
+    background-image: url(/media/beautiful-blue-jeans-blurred-background-949671.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin: 0 10px;
+}
+
+.colfashionimgcontent2 {
+    background-color: whitesmoke;
+    background-image: url(/media/mars-centre-night.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin: 0 10px;
+}
+
+.colfashion {
+    background-color: rgb(245, 229, 229);
+}
+
+.tellme {
+    position: relative;
+    top: 40px;
+    margin: 0 0 0 30px;
+    font-size: 22px;
+    line-height: 0;
+    text-transform: uppercase;
+}
+
+.colfashion .shop-fashion {
+    padding: 10px 50px;
+    font-size: 15px;
+    font-family: lato, Arial, sans-serif;
+}
+
+.quality {
+    /* padding: 20px; */
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: gray;
+    line-height: 28px;
+}
+
+.fas {
+    background: url(/media/textBackground.jpg) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.getrow {
+    margin: 20px;
+    background-color: white;
+    position: relative;
+    /* top: -180px; */
+}
+
+.servcontainer2 {
+    width: 100%;
+    background-color: rgb(230, 227, 227);
+    padding: 10px 0;
+}
+
+.srow {
+    position: relative;
+    margin: 40px;
+    padding: 20px 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.sbig {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 150px;
+    font-family: lato, Arial, sans-serif;
+    color: #F5E5E5;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.sup {
+    padding: 20px 0px;
+    z-index: 10;
+    position: absolute;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    width: 100%;
+    top: 30%;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 20px;
+    color: black;
+    height: auto;
+}
+
+
+/* smaky 2 */
+
+.fashion-shop2 {
+    width: 100%;
+    height: auto;
+    margin: 0 0 100px 0;
+    padding: 0;
+}
+
+.collectfashion2 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 100px;
+}
+
+.fashion-row2 {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    background-color: white;
+    height: 100vh;
+    -ms-grid-columns: 2fr 1fr;
+    grid-template-columns: 55% 45%;
+}
+
+.colfashionimgcontent2 {
+    background-color: whitesmoke;
+    background-image: url(/media/mars-centre-night.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin: 0 10px;
+}
+
+.colfashion2 {
+    background-color: rgb(255, 255, 255);
+}
+
+.tellme2 {
+    position: relative;
+    top: 40px;
+    margin: 0 0 0 30px;
+    font-size: 25px;
+    line-height: 0;
+    text-transform: uppercase;
+}
+
+.colfashion2 .shop-fashion2 {
+    padding: 10px 50px;
+    font-size: 15px;
+    font-family: lato, Arial, sans-serif;
+}
+
+.quality2 {
+    /* padding: 20px; */
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: gray;
+    line-height: 28px;
+}
+
+#gobtn {
+    margin: 0 0 0 100px;
+    align-items: center;
+    justify-items: center;
+}
+
+.button {
+    padding: 12px 30px;
+    background: white;
+    color: black;
+    border: 2px solid black;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    background: black;
+    color: white;
+}
+
+
+/* smaky 3 */
+
+.fashion-shop3 {
+    width: 100%;
+    height: auto;
+    margin: 0 0 100px 0;
+    padding: 0;
+}
+
+.collectfashion3 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.fashion-row3 {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    background-color: white;
+    height: 100vh;
+    -ms-grid-columns: 1fr 2fr;
+    grid-template-columns: 45% 55%;
+}
+
+.colfashionimgcontent3 {
+    background-color: whitesmoke;
+    background-image: url(/media/chair-chat-conversation-711009.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin: 0 10px;
+}
+
+.colfashion3 {
+    background-color: rgb(255, 255, 255);
+}
+
+.colfashion3 .shop-fashion3 {
+    padding: 10px 50px;
+    font-size: 15px;
+    font-family: lato, Arial, sans-serif;
+}
+
+.quality3 {
+    /* padding: 20px; */
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: gray;
+    line-height: 28px;
+}
+
+.rowarrivals {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0px 55px;
+}
+
+.coloumnarrivals {
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+.product-img {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.product-img>img {
+    height: 15rem;
+    width: 100%;
+    background-color: transparent;
+    background-size: contain;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.coloumnarrivals:hover .product-img>img {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+.product-img .product-quicview {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: black;
+    opacity: 0;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.product-img:hover .product-quicview {
+    opacity: 0.5;
+}
+
+.product-img .product-quicview>a {
+    width: 72px;
+    height: 72px;
+    border: 2pX solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 36px;
+    line-height: 72px;
+}
+
+.product-img .product-quicview>a:hover {
+    border: 2px solid white;
+    color: white;
+}
+
+.product-description {
+    margin-top: 10px;
+    background-color: whitesmoke;
+}
+
+.product-description h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #9f9f9f;
+    margin-bottom: 5px;
+    display: block;
+    color: #3a3a3a;
+    text-transform: capitalize;
+    line-height: 1.2;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.product-description>p {
+    font-size: 15px;
+    color: #3a3a3a;
+    font-size: 1em;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+.product-description .add-to-cart-btn {
+    margin-top: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #ff084e;
+    display: block;
+}
+
+.add-to-cart-btn {
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.product-description .add-to-cart-btn:hover {
+    color: #2a2a2a;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="discripion" content="This is cart page where you can see products that you added into your cart">
+    <meta name="keywords" content='cart,shopping,e-commerce, buy,sell,create, innovate,shoes,style,fashion'>
+    <meta name="author" content='navjot singh'>
+
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" />
+    <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+
+
+    <title>Cart</title>
+</head>
+
+<body onscroll="navScrolled()">
+
+    <header id="top">
+        <nav class="cardd profileNav " id="navv">
+            <div id="logoSection">
+                <div id="profilePic"></div>
+                <p>Weber</p>
+            </div>
+            <ul class="profileNavbar ">
+                <li><a tabindex="1" class="PnavLink " href="index.html">Home</a></li>
+                <li><a tabindex="2" class="PnavLink" href="services.html">Services</a></li>
+                <li><a tabindex="3" class="PnavLink" href="register.html">Register</a></li>
+                <li><a tabindex="3" class="PnavLink" href="table.html">Time Table</a></li>
+                <li><a tabindex="4" class="PnavLink " href="about.html">About</a></li>
+                <li><a tabindex="5" class="PnavLink" href="contact.html">Contact Us</a></li>
+                <li><a tabindex="5" class="PnavLink" href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="mainHeader" id="mainHeader">
+            <div class="head1" id="head1">
+                <div class="headContentHead1">
+                    We help innovators <br> change the world.
+                </div>
+                <div class="headContentDiscription1">
+                    MaRS supports Canada’s most promising <br> startups — helping them grow, create jobs and <br>
+                    solve
+                    society’s greatest challenges.
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 draggable ">
+                <div class="productImages"
+                    style="background-image: url(../asset/images/About-MaRS-Header-896x1120.jpg);">.</div>
+                <p>
+                        Entrepreneurship
+                </p>
+            </div>
+            <div class="col-lg-3 draggable">
+                <div class="productImages"
+                    style="background-image: url(../asset/images/About-MaRS-Header-896x1120.jpg);">.</div>
+                <p>
+                        MaRS Startup Toolkit
+                </p>
+            </div>
+            <div class="col-lg-3 draggable">
+                <div class="productImages"
+                    style="background-image: url(../asset/images/About-MaRS-Header-896x1120.jpg);">.</div>
+                <p>
+                        Market Intelligence
+                </p>
+            </div>
+            <div class="col-lg-3 draggable">
+                <div class="productImages"
+                    style="background-image: url(../asset/images/About-MaRS-Header-896x1120.jpg);">.</div>
+                <p>
+                        Entrepreneurship Premium
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--                 cart headings            -->
+
+    <section class="cartWrapperr top card">
+
+        <div id="cart" class="mainCart">
+            <h2 class="componentHeading">Your Cart (Draggable)</h2>
+            <!--    list     -->
+
+
+            <div class="list">
+                <a href="/html/index.html#nike">
+                    <img class="cartProductImg" src="../asset/images/About-MaRS-Header-896x1120.jpg" alt="">
+                </a>
+                <p class="pname">
+                    <span>Entrepreneurship</span>
+                    <span>For 10 Months</span>
+                </p>
+                <p class="pprice">$10,000 <i class="fas fa-times-circle"></i></p>
+            </div>
+
+            
+         
+
+
+
+            <!--        list bottom         -->
+            
+            <!-- <div class="componentHeading listBottom">
+                <p>Shipping Fee $40</p>
+                <p> <span>Total:</span> <span>$1650</span></p>
+            </div> -->
+        </div>
+
+        <div class="card" id="paymentDetails">
+            <p id="pdHeading">Payment Details</p>
+            <div id="atmCardWrapper">
+                <div class="atmsubWrapper">
+                    <div class="atmCard">
+                        <i class="fab fa-cc-visa"></i>
+                    </div>
+                    <p>Credit Card</p>
+                </div>
+                <div class="atmsubWrapper">
+                    <div class="atmCard">
+                        <i class="fab fa-cc-paypal"></i>
+                    </div>
+                    <p>PayPal</p>
+                </div>
+            </div>
+
+
+            <form action="/html/index.html">
+                <div>
+                    <p>Cardholder Name</p>
+                    <input type="text" placeholder="Cardholder Name">
+                </div>
+                <div>
+                    <input type="number" placeholder="Card Number">
+                    <i></i>
+                </div>
+
+                <div id="formBottom">
+                    <div>
+                        <p>Expire Date</p>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <p>CVV</p>
+                        <input type="text" placeholder="CVV">
+                    </div>
+                </div>
+                <input type="submit">
+                <p style="text-align: center; font-size: 12px; letter-spacing: 1px"><a href="../home.html">Continue
+                        Shopping</a></p>
+            </form>
+        </div>
+    </section>
+
+    <script src="../js/index.js"></script>
+
+
+</body>
+
+</html>

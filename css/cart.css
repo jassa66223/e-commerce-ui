@@ -1,0 +1,195 @@
+
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+.productImages{
+    background-position: center;
+    background-size: cover;
+}
+.productImages>p{
+    font-family: sans-serif;
+    font-size: 1.6rem;
+}
+
+.cartWrapperr{
+    display: flex;
+    justify-content: space-around;
+    margin: 120px 30px 0 50px;
+    padding: 20px 30px;
+    height: auto;
+    color: rgb(48, 48, 48);
+}
+
+.productImages{
+    height: 100px;
+}
+
+#cart{
+    width: 60%;
+}
+
+#paymentDetails{
+    width: 40%;
+}
+
+.componentHeading{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 23px;
+    color: rgb(73, 73, 73)
+}
+.listBottom{
+    padding: 0 80px;
+    width: 70%;
+}
+.listBottom>p{
+    text-align: end;
+    font-size: 15px
+}
+.listBottom>p:nth-child(1){
+    font-size: 10px
+}
+.listBottom>p:nth-child(2){
+    font-size: 20px
+}
+
+.list{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 30px;
+    padding: 0 80px
+}
+.list>a{
+    width: 20%;
+}
+.cartProductImg{
+    border-radius: 4px;
+    width: 100%;
+    background-color: black;
+
+    background-repeat: no-repeat;
+}
+.pname{
+    width: 50%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.pname>span:nth-child(2){
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: rgb(90, 90, 90)
+}
+.pprice{
+    width: 20%;
+    text-align: center;
+    padding: 0 5px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#paymentDetails{
+    padding: 30px;
+    background: linear-gradient(-45deg, rgb(53, 52, 52), rgb(61, 31, 43), rgb(33, 60, 70), #23D5AB);
+	background-size: 400% 400%;
+    animation: Gradient 6s ease infinite;
+    border-radius: 10px;
+     /* background-color: #2b3349; */
+
+    color: white
+}
+i{
+    color: rgb(192, 192, 192);
+    font-size: 18px
+}
+
+#pdHeading{
+    font-size: 23px;
+    letter-spacing: 1px;    
+}
+
+#atmCardWrapper{
+    height: auto;
+    display: flex;
+}
+.fa-cc-visa , .fa-cc-paypal{
+    font-size: 35px;
+    color: white;
+    padding: 0;
+}
+.fa-camera .fa-plus-circle{
+    color: white;
+    font-size: 30px;
+}
+.atmsubWrapper{
+    width: 38%;
+    height: auto;
+    margin: 10px 20px 0 0;
+    cursor: pointer;
+}
+.atmsubWrapper>p{
+    text-align: center;
+    font-size: 13px;
+    padding-right: 10px
+}
+
+.atmCard{
+    height: 90px;
+    width: 90%;
+    border: 2px solid white;
+    
+    border-radius: 5px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=text], textarea,input[type=date],input[type=number] ,select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    color: rgb(97, 97, 97);
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: rgb(82, 112, 151);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgb(103, 129, 163);
+  }
+
+  #formBottom{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px
+  }
+
+  form a{
+      text-decoration: none;
+      color: rgb(206, 206, 206)
+  }

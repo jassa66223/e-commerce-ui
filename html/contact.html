@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+
+
+
+    <title>Contact Us</title>
+</head>
+<script>
+    $(function() {
+        $("#dispg").accordion({
+            collapsible: true,
+            event: "mouseover",
+            animate: 1000,
+            active: 1
+        });
+    });
+    $.validator.setDefaults({
+        submitHandler: function() {
+            alert("submitted!");
+            event.preventDefault();
+        }
+    });
+
+
+    $().ready(function() {
+        // validate the comment form when it is submitted
+        $("#commentForm").validate();
+
+        // validate signup form on keyup and submit
+        $("#regForm").validate({
+            rules: {
+                firstname: "required",
+                lastname: "required",
+                email: {
+                    required: true,
+                    email: true
+                },
+                mobileno: {
+                    required: true,
+                    Number: true,
+                    lenght: [10, 10]
+                },
+                messages: {
+                    required: true
+                }
+
+            },
+            messages: {
+                firstname: "Please enter your firstname",
+                lastname: "please enter your lastname",
+                email: "enter valid email address",
+                mobileno: "number is not valid",
+                messages: "please enter a comment"
+            }
+        });
+
+    });
+</script>
+<style>
+    label {
+        left: 0;
+        color: red;
+        font-size: 11px;
+        padding-top: 0;
+    }
+    
+    .hoverme a:hover {
+        color: red;
+    }
+    
+    input:focus[type="text"] {
+        outline-width: 0;
+        border: 2px solid #26a69a;
+        border-radius: 15px;
+    }
+    
+    input:focus[type="number"] {
+        outline-width: 0;
+        border: 2px solid #26a69a;
+        border-radius: 15px;
+    }
+    
+    textarea:focus[type="text"] {
+        outline-width: 0;
+        border: 2px solid #26a69a;
+        border-radius: 15px;
+    }
+</style>
+
+
+<body onscroll="navScrolled()">
+
+    <header id="top">
+        <nav class="card profileNav " id="nav">
+            <div id="logoSection">
+                <div id="profilePic"></div>
+                <p>Weber</p>
+            </div>
+            <ul class="profileNavbar ">
+                    <li><a tabindex="1" class="PnavLink " href="index.html">Home</a></li>
+                    <li><a tabindex="2" class="PnavLink" href="services.html">Services</a></li>
+                    <li><a tabindex="3" class="PnavLink" href="register.html">Register</a></li>
+                    <li><a tabindex="3" class="PnavLink" href="table.html">Time Table</a></li>
+                    <li><a tabindex="4" class="PnavLink " href="about.html">About</a></li>
+                    <li><a tabindex="5" class="PnavLink" href="contact.html">Contact Us</a></li>
+                    <li><a tabindex="5" class="PnavLink" href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+
+        <div class="mainHeader" style="overflow: hidden;" id="mainHeader">
+            <div class="head1" id="head1">
+                <div class="headContentHead1">
+                    Contact Us:
+
+                </div>
+                <div class="headContentDiscription1">
+                    Our team is available 24/7 to help our clients.
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main></main>
+
+    <div class="start">
+        <div class="contact">
+            <p>CONTACT MARS</p>
+        </div>
+
+    </div>
+    <div class="info">
+        <div class="data">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1314.9919346304484!2d-79.39020328740078!3d43.65972496671324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34b63288589f%3A0xd6b3ddc7df9d10e0!2sImpark%20(MaRS%20Discovery%20District%20Parking%20Garage)!5e0!3m2!1sen!2sca!4v1574982716122!5m2!1sen!2sca"
+                    width="100%" height="650" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </div>
+        <div class="data1">
+            <div class="meta">
+                <div class="gen">
+                    <h5>General</h5>
+                    <p>&nbsp;</p>
+                    <p class="hoverme"><a href="tel:+14166738100">416.673.8100</a></p>
+                    <p class="hoverme"><a href="mailto:marsdiscoverydistrict@marsdd.com">marsdiscoverydistrict@marsdd.com</a></p>
+                    <p>&nbsp;</p>
+                    <p>MaRS Discovery District</p>
+                    <p>MaRS Centre, South Tower</p>
+                    <p>101 College Street, Suite 100</p>
+                    <p>Toronto, Ontario, Canada M5G 1L7</p>
+                    <p>&nbsp;</p>
+                    <p class="hoverme"><a href="https://www.google.com/maps/dir//101+College+Street,+Toronto,+ON/@4…m1!1s0x882b34b632b77689:0x901c210dff19e5a4!2m2!1d-79.3886594!2d43.6599298" target="_blank" rel="noopener">Map & Directions</a></p>
+                </div>
+                <div class="media">
+                    <h5>Media Inquiries</h5>
+                    <p>&nbsp;</p>
+                    <p class="hoverme"><a href="tel:+14166738152">416.673.8152</a></p>
+                    <p class="hoverme"><a href="mailto:media@marsdd.com">media@marsdd.com</a></p>
+                    <p>&nbsp;</p>
+                    <p class="hoverme">chech out our <a href="/media-press/">media and press</a></p>
+                    <p>centre to learn more</p>
+                </div>
+                <div class="loc">
+                    <h1>How to get here</h1>
+                    <p>&nbsp;</p>
+                    <p>Driving and parking</p>
+                    <p class="hoverme"><a href="https://www.google.ca/maps/dir/Pearson+Airport,+Mississauga,+ON/MaRS…m1!1s0x882b34b7ccd8ba1f:0x7e6f7af0cc4e65f3!2m2!1d-79.3886319!2d43.6598295" target="_blank" rel="noopener">From Toronto Pearson International Airport ></a></p>
+                    <p class="hoverme"><a href="https://www.google.ca/maps/dir/Union+Station,+Front+Street+West,+Toro…s0x882b34b7ccd8ba1f:0x7e6f7af0cc4e65f3!2m2!1d-79.3886319!2d43.6598295!3e0" target="_blank" rel="noopener">From Union Station, Toronto ></a></p>
+
+                    <div id="dispg" style="widows: 50%;">
+                        <h3>parking</h3>
+                        <p>The MaRS underground lot can be accessed via Elizabeth Street, just south of College Street on the west side of the road. It can also be accessed via University Avenue when driving northbound, just past the Peter Munk Cardiac Centre,
+                            south of College Street. Substantial additional parking is available at a host of parking garages and above ground lots within a two-block radius.</p>
+                    </div>
+                    <h2>Transit</h2>
+                    <p><strong>Subway:</strong>MaRS offers direct access to the Queen’s Park subway station, with connecting service to Go Trains at Union Station.</p>
+                    <p>&nbsp;</p>
+                    <p><strong>Streetcar:</strong>The eastbound and westbound College Street streetcars (506 Carlton) stop directly outside MaRS at the intersections of College Street and University Avenue, as well as College Street and Elizabeth Street.</p>
+                    <p>&nbsp;</p>
+                    <p><strong>Charter Bus:</strong>The Toronto Coach Terminal is located just south of MaRS at Elizabeth Street and Edward Street.</p>
+                    <p>&nbsp;</p>
+                    <h1> Contact Us</h1>
+                    <p>&nbsp;</p>
+                    <div class="contact">
+                        <div class="cont">
+                            <p>JASHAN</p>
+                            <p class="hoverme"><a href="mailto:c0752052@mylambton.ca">c0752052@mylambton.ca</a></p>
+                            <p class="hoverme"><a href="tel:+14372391838">437.239.1838</a></p>
+                            <p>&nbsp;</p>
+                            <p>GURJOT</p>
+                            <p class="hoverme"><a href="mailto:c0752506@mylambton.ca">c0752506@mylambton.ca</a></p>
+                            <p class="hoverme"><a href="tel:+14372161211">437.6216.1211</a></p>
+                            <p>&nbsp;</p>
+                            <p>NITIN</p>
+                            <p class="hoverme"><a href="mailto:c0752098@mylambton.ca">c0752098@mylambton.ca</a></p>
+                            <p class="hoverme"><a href="tel:+16478075760">647.807.5760</a></p>
+                            <p>&nbsp;</p>
+                        </div>
+                        <div class="cont">
+                            <p>NAVJOT</p>
+                            <p class="hoverme"><a href="mailto:media@marsdd.com">media@marsdd.com</a></p>
+                            <p class="hoverme"><a href="tel:+14166738152">416.673.8152</a></p>
+                            <p>&nbsp;</p>
+                            <p>KIRAN</p>
+                            <p class="hoverme"><a href="mailto:media@marsdd.com">media@marsdd.com</a></p>
+                            <p class="hoverme"><a href="tel:+14166738152">416.673.8152</a></p>
+
+                        </div>
+                        <div style="width: 100%;">
+                            <h1>Drop Us a Line</h1>
+                        </div>
+
+
+                        <form id="regForm">
+                            <input type="text" name="firstname" id="firstname" placeholder="First Name" style="border-radius: 15px;" />
+                            <input type="text" name="lastname" id="lastname" placeholder="Last Name" style="border-radius: 15px;" />
+                            <input type="text" name="email" id="email" placeholder="Email ID" style="border-radius: 15px;" />
+                            <input type="number" name="mobileno" id="mobileno" placeholder="Mobile Number" style="width: 100%; border-radius: 15px;" />
+                            <textarea id="#messages" type="text" name="messages" placeholder="Comment" style="width: 100%; height: 80px; border-radius: 15px; font-size: 17px;"></textarea>
+                            <button class="btn waves-effect waves-light" type="submit" style="position: relative; border-radius: 15px;
+                            cursor: pointer; width: 100%;
+                            display: inline-block;
+                            overflow: hidden;-webkit-tap-highlight-color: transparent; vertical-align: middle; z-index: 1;text-decoration: none; color: #fff;background:linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB); background-size: 400% 400%;
+    animation: Gradient 6s ease infinite; text-align: center; letter-spacing: .5px;">
+                                    SUBMIT
+                                </button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="coll-6" style="overflow: hidden;">
+
+            <div class="links">
+                <p> <a href="#top"> To the Top</a> &#8679; </p><br>
+    
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-snapchat"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+    
+            <div class="footer">
+    
+                <div>
+                    <h3>Contact</h3>
+                    <p>phone : +1 437-234-343</p>
+                    <p>marslabs@gmail.com</p>
+                </div>
+    
+                <div>
+                    <h3>SERVICES</h3>
+                    <p>Startup incentives</p>
+                    <p>Mars intelligence</p>
+                    <p>Startup Workshops</p>
+                </div>
+    
+                <div>
+                    <h3>VISIT</h3>
+                    <p>Envoy SE California</p>
+                    <p>34 Tesla , Ste 100</p>
+                    <p>Irvine CA , USA</p>
+                </div>
+    
+                <div>
+                    <h3>Explore</h3>
+                    <p>Our Home</p>
+                    <p>About Us</p>
+                    <p>Our Capabilities</p>
+                </div>
+    
+            </div>
+        </footer>
+    
+
+
+    <script src="../js/index.js"></script>
+
+</body>
+
+</html>

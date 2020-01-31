@@ -1,0 +1,494 @@
+.col-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 50px 0;
+}
+
+.col-contact .contacts {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 30%;
+          flex: 1 0 30%;
+  padding-left: 100px;
+}
+
+.col-contact .contacts li {
+  list-style-type: none;
+  font-weight: 100;
+  padding: 20px;
+  width: 70%;
+}
+
+.col-contact .contacts li h2 {
+  color: #171717;
+  font-size: 28px;
+  padding-bottom: 10px;
+  font-family: "Arial", helvetica;
+  font-weight: 100;
+}
+
+.col-contact .contacts li p {
+  color: #171717;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.col-contact .map {
+  -webkit-box-flex: 1;
+      -ms-flex: 1  0 60%;
+          flex: 1  0 60%;
+  text-align: center;
+  padding: 70px 0;
+}
+
+.col-contact .map p {
+  display: block;
+}
+
+.col-contact .map p iframe {
+  width: 80%;
+}
+
+.reservation {
+  padding: 30px 140px;
+}
+
+.reservation .reserve {
+  color: #171717;
+  font-family: "Dancing Script", cursive;
+  font-size: 34px;
+  display: block;
+  cursor: pointer;
+}
+
+.reservation .reserve:hover {
+  color: grey;
+}
+
+.partners-lists {
+  padding: 40px;
+}
+
+.partners-lists div {
+  padding: 10px;
+}
+
+.partners-lists .second-partners, .third-partners {
+  display: none;
+}
+
+.partners-lists .second-partners, .first-partners, .third-partners {
+  text-align: center;
+}
+
+.partners-lists .second-partners img, .first-partners img, .third-partners img {
+  max-width: 100%;
+  height: 500px;
+}
+
+.partners-lists .row div {
+  text-align: center;
+  cursor: pointer;
+  margin: 0px;
+  font-size: 24px;
+  font-weight: 400;
+  width: 150px;
+}
+
+.partners-lists #corp, #public, #comm {
+  border-bottom: 3px solid black;
+}
+
+.partners-lists #corp:hover, .partners-lists #corp:active, #public:hover, #public:active, #comm:hover, #comm:active {
+  border-bottom: 3px solid #b4b1b1;
+  color: #b4b1b1;
+}
+
+.col-review {
+  background-color: #171717;
+}
+
+.col-review ul {
+  position: relative;
+  left: 15%;
+  list-style-type: none;
+  width: 50%;
+  padding: 100px 0;
+}
+
+.col-review ul li {
+  color: rgba(225, 225, 225, 0.8);
+  padding-bottom: 40px;
+}
+
+.col-review ul li p:first-child {
+  font-family: "Vollkorn", serif;
+  font-size: 28px;
+}
+
+.col-review ul li p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+}
+
+.col-review ul li:last-child {
+  color: white;
+  display: inline-block;
+  font-size: 32px;
+  padding-bottom: 10px;
+  font-family: "Dancing Script", cursive;
+  font-weight: 100;
+}
+
+.col-review ul li:last-child:hover {
+  color: rgba(225, 225, 225, 0.8);
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation {
+  height: 50px;
+  background: black;
+}
+
+.col-sm-6 {
+  margin: -10px;
+}
+
+.col-sm-6 img {
+  max-width: 100%;
+  height: 70%;
+  margin-left: -10px;
+  border-radius: 4px;
+}
+
+.col-sm-6 p {
+  font-size: 30px;
+  position: relative;
+  top: 30%;
+}
+
+.appreciation {
+  text-align: center;
+}
+
+.appreciation p {
+  font-family: 'Vollkorn', serif;
+  width: 70%;
+  font-size: 23px;
+  margin: 100px 10rem;
+}
+
+.plans {
+  padding: 20px;
+  padding-bottom: 150px;
+}
+
+.plans h3 {
+  font-size: 45px;
+  color: #000080;
+  font-weight: bold;
+}
+
+.plans div {
+  text-align: center;
+}
+
+.partners {
+  background: #f2f2f2;
+}
+
+.partners h2 {
+  width: 60%;
+  padding-top: 60px;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.partners .row {
+  padding-top: 60px;
+}
+
+.partners .row div {
+  text-align: center;
+  padding: 30px;
+}
+
+.partners .row div h3 {
+  padding-bottom: 20px;
+}
+
+.fadeint {
+  margin-left: -400px;
+  max-width: 100%;
+  opacity: 0;
+}
+
+.fadedown {
+  margin-top: 100px;
+  opacity: 0;
+}
+
+.sale {
+  text-align: center;
+  padding: 20px;
+  width: 50%;
+  border-radius: 4px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-size: 18px;
+  background: linear-gradient(-55deg, #f7e81a, #e73c7e, #f8b02b, #d809f3);
+  background-size: 400% 400%;
+  -webkit-animation: gradientBG 14s ease infinite;
+          animation: gradientBG 14s ease infinite;
+}
+
+.sale a {
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.sale:hover {
+  background-color: black;
+  color: white;
+}
+
+.sale:hover a {
+  color: white;
+  font-weight: bold;
+}
+
+@-webkit-keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 70% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 70% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.col-6 {
+  height: auto;
+  background: black;
+  margin: 0;
+  margin-top: 80px;
+  padding: 20px 0;
+}
+
+.links {
+  text-align: center;
+}
+
+.links p {
+  background: black;
+  color: lightgray;
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+}
+
+.col-6 i {
+  color: white;
+  font-size: 25px;
+  margin: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.col-6 i:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.col-6 p:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: lightgray;
+  padding-top: 30px;
+}
+
+.footer > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 15%;
+          flex: 1 0 15%;
+}
+
+.footer p {
+  position: relative;
+  left: 35%;
+  line-height: 0.5cm;
+  font-size: 14px;
+}
+
+.footer h3 {
+  color: white;
+  text-align: center;
+  font-weight: lighter;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text {
+    font-size: 11px;
+  }
+}
+/*# sourceMappingURL=project.css.map */
+
+

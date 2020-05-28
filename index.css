@@ -1022,7 +1022,7 @@ button{
     width: 80%;
 }
 
-.firsthead {
+.firstheadd {
     position: absolute;
     top: 140px;
     color: black;
@@ -1036,7 +1036,7 @@ button{
     line-height: 0px;
 }
 
-.firsthead h2 {
+.firstheadd h2 {
     font-size: 60px;
     color: black;
     text-shadow: 3px 3px whitesmoke;

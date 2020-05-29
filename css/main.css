@@ -101,7 +101,7 @@
 
 .colfashionimgcontent {
     background-color: whitesmoke;
-    background-image: url(/media/beautiful-blue-jeans-blurred-background-949671.jpg);
+    background-image: url(../media/beautiful-blue-jeans-blurred-background-949671.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -111,7 +111,7 @@
 
 .colfashionimgcontent2 {
     background-color: whitesmoke;
-    background-image: url(/media/mars-centre-night.png);
+    background-image: url(../media/mars-centre-night.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -148,7 +148,7 @@
 }
 
 .fas {
-    background: url(/media/textBackground.jpg) no-repeat;
+    background: url(../media/textBackground.jpg) no-repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -229,7 +229,7 @@
 
 .colfashionimgcontent2 {
     background-color: whitesmoke;
-    background-image: url(/media/mars-centre-night.png);
+    background-image: url(../media/mars-centre-night.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -319,7 +319,7 @@
 
 .colfashionimgcontent3 {
     background-color: whitesmoke;
-    background-image: url(/media/chair-chat-conversation-711009.jpg);
+    background-image: url(../media/chair-chat-conversation-711009.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

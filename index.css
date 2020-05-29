@@ -17,7 +17,7 @@ header{
 
 #profilePic{
     width: 60px;
-    background-image: url(/asset/images/Logo.png);
+    background-image: url(asset/images/Logo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -131,7 +131,7 @@ header{
     display: flex;
     margin: 40px 0 0 0;
     height: 90vh;
-    background-image: url(/asset/images/headBackground.jpg);
+    background-image: url(asset/images/headBackground.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     justify-content: center;
@@ -179,7 +179,7 @@ header{
     width: 100%;
     height: 100%;
     border-radius: 6px;
-    background-image: url(/asset/images/services.jpg);
+    background-image: url(asset/images/services.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;   
@@ -1014,7 +1014,7 @@ button{
 }
 
 .saleWrapper>.sale:nth-child(1) {
-    background-image: url(/asset/images/About-MaRS-Header-896x1120.jpg);
+    background-image: url(asset/images/About-MaRS-Header-896x1120.jpg);
     background-repeat: no-repeat;
     background-color: whitesmoke;
     background-position: center;
@@ -1099,7 +1099,7 @@ button{
 
 .colfashionimgcontent {
     background-color: whitesmoke;
-    background-image: url(/asset/images/beautiful-blue-jeans-blurred-background-949671.jpg);
+    background-image: url(asset/images/beautiful-blue-jeans-blurred-background-949671.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1109,7 +1109,7 @@ button{
 
 .colfashionimgcontent2 {
     background-color: whitesmoke;
-    background-image: url(/asset/images/mars-centre-night.png);
+    background-image: url(asset/images/mars-centre-night.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1146,7 +1146,7 @@ button{
 }
 
 .fas {
-    background: url(/asset/images/textBackground.jpg) no-repeat;
+    background: url(asset/images/textBackground.jpg) no-repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -1227,7 +1227,7 @@ button{
 
 .colfashionimgcontent2 {
     background-color: whitesmoke;
-    background-image: url(/asset/images/mars-centre-night.png);
+    background-image: url(asset/images/mars-centre-night.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1317,7 +1317,7 @@ button{
 
 .colfashionimgcontent3 {
     background-color: whitesmoke;
-    background-image: url(/asset/images/chair-chat-conversation-711009.jpg);
+    background-image: url(asset/images/chair-chat-conversation-711009.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

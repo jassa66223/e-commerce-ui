@@ -148,7 +148,7 @@
 }
 
 .fas {
-    background: url(../media/textBackground.jpg) no-repeat;
+    background: url(../asset/images/textBackground.jpg) no-repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
